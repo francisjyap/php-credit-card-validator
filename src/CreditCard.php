@@ -219,10 +219,6 @@ class CreditCard
             }
         }
 
-        if (($checksum % 10) == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (($checksum % 10) == 0);
     }
 }
